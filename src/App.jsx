@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Mail,
-  Phone,
   MessageCircle,
   Send,
-  Github,
-  Linkedin,
   ExternalLink,
   Code,
   Database,
   Server,
+  Github,
+  Linkedin,
   Smartphone,
 } from "lucide-react";
 
@@ -783,7 +782,7 @@ const Portfolio = () => {
 
           <div style={styles.contactGrid}>
             <ContactCard
-              icon={Phone}
+              icon={Smartphone}
               label="Mobile"
               value="7347422841"
               link="tel:7347422841"
@@ -815,6 +814,22 @@ const Portfolio = () => {
               value="belikeaditya25@gmail.com"
               link="mailto:belikeaditya25@gmail.com"
               delay={500}
+              isVisible={isVisible.contact}
+            />
+            <ContactCard
+              icon={Github}
+              label={"GitHub"}
+              value="github.com/adityaisatgithub"
+              link="https://github.com/adityaisatgithub"
+              delay={600}
+              isVisible={isVisible.contact}
+            />
+            <ContactCard
+              icon={Linkedin}
+              label={"LinkedIn"}
+              value="linkedin.com/belikeaditya/"
+              link="https://www.linkedin.com/in/belikeaditya/"
+              delay={700}
               isVisible={isVisible.contact}
             />
           </div>
