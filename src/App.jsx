@@ -693,30 +693,39 @@ const Portfolio = () => {
 
           <div style={styles.skillsGrid}>
             <SkillCategory
-              title="Frontend Development"
-              skills={[
-                "React",
-                "Next.js",
-                "Angular",
-                "JavaScript",
-                "TypeScript",
-              ]}
+              title="Languages"
+              skills={["JavaScript", "TypeScript", "Java"]}
               icon={Code}
               delay={200}
               isVisible={isVisible.skills}
             />
 
             <SkillCategory
-              title="Backend Development"
-              skills={["Node.js", "Express.js", "MongoDB", "MS SQL", "MySQL"]}
+              title="Frameworks & Libraries"
+              skills={[
+                "Node.js",
+                "Express.js",
+                "React",
+                "MongoDB",
+                "MS SQL",
+                "MySQL",
+              ]}
               icon={Server}
               delay={400}
               isVisible={isVisible.skills}
             />
 
             <SkillCategory
-              title="Tools & Technologies"
-              skills={["Git", "Docker", "AWS"]}
+              title="Databases"
+              skills={["MongoDB", "MS SQL", "MySQL"]}
+              icon={Server}
+              delay={400}
+              isVisible={isVisible.skills}
+            />
+
+            <SkillCategory
+              title="Tools & Cloud"
+              skills={["Git", "AWS"]}
               icon={Database}
               delay={600}
               isVisible={isVisible.skills}
